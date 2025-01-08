@@ -31,3 +31,34 @@ document.querySelectorAll('nav a').forEach(anchor => {
   hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
   });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,  
+      spaceBetween: 10, 
+      autoplay: {
+        delay: 3000,  
+        disableOnInteraction: false,  
+      },
+      loop: true,  
+      navigation: {
+        nextEl: '.swiper-button-next',  
+        prevEl: '.swiper-button-prev',  
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: { 
+          slidesPerView: 1, 
+          spaceBetween: 10,
+        },
+        1024: { 
+          slidesPerView: 1, 
+          spaceBetween: 10,
+        }
+      },
+    });
+  });
+  
