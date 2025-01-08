@@ -126,15 +126,21 @@
 <section id="contact">
     <h2 class="about">Contact Me</h2>
     <div class="container">
-        <p>If you have any questions or would like to get in touch, feel free to reach out!</p>
-        <form action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
+      <p>If you have any questions or would like to get in touch, feel free to reach out!</p>
+      <!-- Formspree Integration -->
+      <form action="https://formspree.io/f/xjkkpdpg" method="POST">
+        <!-- Your Name -->
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <input type="hidden" name="_next" value="https://portfolio-eight-liard-91.vercel.app/thank-you.html">
+        <input type="hidden" name="_subject" value="New message from your website">
+  
+        <!-- Submit button -->
+        <button type="submit" class="btn">Send Message</button>
+      </form>
     </div>
-</section>
+  </section>  
 
   <!-- Footer -->
   <footer>
