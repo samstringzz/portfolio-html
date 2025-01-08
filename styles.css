@@ -462,6 +462,21 @@ body {
         color: #333;
     }
 
+    .about-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;      
+        margin: 30px 0;
+        width: 100%;              
+        height: auto;             
+      }
+      
+      .about-image img {
+        max-width: 100%;  
+        height: auto;    
+      }
+      
+
     .hero-image img {
       max-width: 80%;
     }
